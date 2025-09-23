@@ -15,13 +15,17 @@
  */
 
 // Your code goes here...
-function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
-  if (arr > val1 && arr < val2) {
-    return false;
-  } else {
+  function doesArrayIncludeItemsBetweenVals(i, val1, val2) {
+    for (var i=1; i=10;){
+      if (i > val1 && i < val2) {
     return true;
+  } else {
+    return false;
   }
 }
+  }
+
+
 
 doesArrayIncludeItemsBetweenVals(3, 1, 5);
 doesArrayIncludeItemsBetweenVals(3, 5, 10);
@@ -60,6 +64,15 @@ const getValueWithConditionTwo = (val1, val2) => {
 
 console.log(getValueWithConditionTwo);
 
+function getValueWithConditionThree(val1, val2) {
+if (val1 === 40 && val2 === 40){
+  return val1 + val2
+}else {
+  return (val1 + val2) * 2;
+}
+}
+
+console.log(getValueWithConditionThree);
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"
 // If the test has all tests passed, switch to the next exercise file
