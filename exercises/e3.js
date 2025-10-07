@@ -15,20 +15,18 @@
  */
 
 // Your code goes here...
-  function doesArrayIncludeItemsBetweenVals(i, val1, val2) {
-    for (var i=1; i=10;){
-      if (i > val1 && i < val2) {
-    return true;
-  } else {
-    return false;
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > val1 && arr[i] < val2) {
+      console.log(arr[i]);
+      return true;
+    }
   }
+  return false;
 }
-  }
 
-
-
-doesArrayIncludeItemsBetweenVals(3, 1, 5);
-doesArrayIncludeItemsBetweenVals(3, 5, 10);
+doesArrayIncludeItemsBetweenVals([2, 4, 2], 3, 5);
+doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10);
 /**
  * ====================================================
  * Please read the /exercises-info/e4.md file. It describes different types of syntax to write functions
@@ -65,11 +63,11 @@ const getValueWithConditionTwo = (val1, val2) => {
 console.log(getValueWithConditionTwo);
 
 function getValueWithConditionThree(val1, val2) {
-if (val1 === 40 && val2 === 40){
-  return val1 + val2
-}else {
-  return (val1 + val2) * 2;
-}
+  if (val1 === 40 && val2 === 40) {
+    return val1 + val2;
+  } else {
+    return (val1 + val2) * 2;
+  }
 }
 
 console.log(getValueWithConditionThree);
