@@ -9,9 +9,11 @@
  * splitFirstAndLastNames('John Smith') => ['John', 'Smith']
  */
 
-const splitFirstAndLastNames = (string) => console.log("$(string)");
+const splitFirstAndLastNames = (str) => {
+  return str.split("Someone", "Somebodyvich");
+};
 
-splitFirstAndLastNames("John, Smith");
+console.log(splitFirstAndLastNames("John Smith"));
 /** =========================
  * The personAge() constant is assigned to a function, that takes an object of person Data as the argument.
  * The function returns the value of the age property of the argument object
