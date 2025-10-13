@@ -12,7 +12,7 @@
  */
 
 // Your code goes here...
-
+function getDiffTwentySeven(num)
 
 
 
